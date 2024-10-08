@@ -21,7 +21,7 @@ This project is a FastAPI application that allows users to upload PDF files and 
    MONGODB_DB_NAME=your_database_name
    ```
 3. Install dependencies using `pip install -r requirements.txt`.
-4. Run the application using `uvicorn app.main:app --reload`.
+4. Run the application using `uvicorn app.main:app --host=0.0.0.0 --port=8000 --reload`.
 
 ## API Endpoints
 
@@ -55,10 +55,6 @@ This project is a FastAPI application that allows users to upload PDF files and 
   - Endpoint: `/v1/logs`
   - Description: Retrieve application logs.
   - Query Parameters: `limit` (optional, default: 100)
-
-## Testing
-
-Run tests using `pytest`. The project includes test files for PDF API, Chat API, and Log API.
 
 ## Deployment
 
